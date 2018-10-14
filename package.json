@@ -1,5 +1,5 @@
 {
-  "name": "test-project",
+  "name": "Angular-User",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -22,7 +22,7 @@
     "@angular/router": "^6.1.0",
     "angular-6-social-login": "^1.1.1",
     "body-parser": "^1.18.3",
-    "bootstrap": "3.3.7",
+    "bootstrap": "~> 4.1.2",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
