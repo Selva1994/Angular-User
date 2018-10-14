@@ -1,0 +1,14 @@
+
+<div class="filterMenu">
+
+    <div class="itemsList">
+        <input type="checkbox" value=""/>
+    </div>
+</div>
+<div class="users">
+    <div class = "user" *ngFor = "let user of users">
+        {{user.login | uppercase}}
+    </div>
+</div>
+
+<app-error [error]="errorMessage" *ngIf="errorMessage"></app-error>

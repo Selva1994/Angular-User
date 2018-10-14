@@ -1,0 +1,9 @@
+<div class = "address-card">
+ <p> Name: {{ user?.name }}</p>
+ <p> Address: {{ user?.address }}</p>
+ <button (click) = "collapse()">Expand / Collapse</button>
+ <div class = "number" *ngIf = "!isCollapsed">
+   Phone:
+   <p *ngFor = "let phone of user?.numbers"> {{ phone }}</p>
+ </div>
+</div>

@@ -1,0 +1,4 @@
+<button class="btn btn-default" (click)="getData()">getData</button>
+<button class="btn btn-primary" (click)="signin()">signIn</button>
+{{userData.name}}
+<img *ngIf="userData.image" [src]="userData.image" />

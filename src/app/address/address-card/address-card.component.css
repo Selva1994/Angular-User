@@ -1,0 +1,8 @@
+.address-card {
+    border: 1px solid grey;
+    padding: 10px;
+}
+.number {
+    border-left: 1px solid green;
+    padding-left: 10px;
+}

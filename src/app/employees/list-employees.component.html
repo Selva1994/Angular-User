@@ -1,0 +1,13 @@
+{{cardName}}
+<div class="form-group">
+    <input type="text" [(ngModel)]="searchText" class="form-control"/>
+</div>
+<div *ngFor="let emp of employees | employeeFilter:searchText">
+    <div class="cursorPointer" (click)="showEmployee(emp.id)">
+    <app-display-employee [emp]="emp" (notifyEmp)="handleNotifyEmpChild($event)"></app-display-employee>
+</div>
+</div>
+<!-- 
+<button class="btn btn-primary" (click) = "nextEmployee()">Next Employee</button> <br>
+{{cardName | date}}
+<app-display-employee [emp]="empToDisplay" (notifyEmp)="handleNotifyEmpChild($event)"></app-display-employee> -->

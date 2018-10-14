@@ -1,0 +1,20 @@
+.users {
+    width: 70%;
+    height: 100vh;
+}
+.user {
+    border: 1px solid gray;
+    width: 30%;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+.user:hover {
+    background-color: green;
+}
+.filterMenu {
+    width: 20%;
+    height: 100vh;
+    float: left;
+}

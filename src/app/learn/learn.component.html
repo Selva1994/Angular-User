@@ -1,0 +1,24 @@
+<!-- <div [class]="color2" [style.background-color]="color"> 
+  dsds
+  <img [src]="imgUrl" style="width: 200px;"/>
+</div> -->
+<button (click)="onClick()">click</button>
+<div *ngFor="let x of data ;trackBy code let i = index;">
+<p >
+  {{x.id }} {{i}}<br>
+  {{x.name | upper}}<br>
+  {{x.amt | currency:'USD':true:'3.2-3'}}<br>
+  {{x.dob | date:"dd/MM/yyyy"}}
+</p>
+</div>
+
+<button (click)="getUsers()">click</button>
+
+<div *ngFor="let user of users">
+  <p>{{user.id}}</p>
+</div>
+<span *ngIf="users">
+{{users[0].name}}</span>
+
+
+<app-error [error]="errorMessage" *ngIf="errorMessage"></app-error>

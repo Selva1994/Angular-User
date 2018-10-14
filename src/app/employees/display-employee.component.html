@@ -1,0 +1,60 @@
+<div class="panel panel-primary" [class.panel-success]="selectedEmp == emp.id" (click)="handleNotifyEmp()">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{emp.name + emp.id}}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="col-xs-10">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img class="profilePhoto" alt="image not found" [src]="emp.photoPath" /><br>
+                    <a [href]="emp.photoPath" style="padding-left: 15px;" download>download</a>
+                </div>
+                <div class="col-xs-8">
+                    <div class="row profileData">
+                        <div class="col-xs-4">
+                            Name
+                        </div>
+                        <div class="col-xs-8">
+                            : {{emp.name}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Gender
+                        </div>
+                        <div class="col-xs-8">
+                            : {{emp.gender}}
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xs-4">
+                                Email
+                            </div>
+                            <div class="col-xs-8">
+                                : <a href="mailto:{{emp.email}}">{{emp.email}}</a>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Phone
+                        </div>
+                        <div class="col-xs-8">
+                            : {{emp.phone}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            Date of Birth
+                        </div>
+                        <div class="col-xs-8">
+                            : {{emp.dob | date}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        {{emp.phone}}
+    </div>
+</div>
